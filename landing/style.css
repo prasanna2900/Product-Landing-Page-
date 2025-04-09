@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background: #4B0082;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+  }
+  .logo {
+    font-size: 1.6rem;
+  }
+  .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: white;
+    color: #4B0082;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    background: #e2e2e2;
+  }
+  .btn.primary {
+    background: #2575fc;
+    color: rgb(247, 245, 245);
+    margin-top:50px;
+
+  }
+  .btn.primary:hover {
+    background: #1a5ede;
+  }
+  
+  .hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 3rem 2rem;
+  }
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .hero-text {
+    flex: 1;
+    min-width: 250px;
+  }
+  .hero-text p{
+    padding-bottom: 20px;
+  }
+  .hero-image {
+    flex: 1;
+  }
+  .hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+  }
+  
+  .features {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card h3 {
+    color: #4B0082;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pricing {
+    background: #f0f0f0;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .price-tag {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2575fc;
+  }
+  .strike {
+    text-decoration: line-through;
+    font-size: 1rem;
+    color: #888;
+    margin-left: 0.5rem;
+  }
+  
+  footer {
+    background: #ddd;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: #4B0082;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-text {
+      order: 2;
+    }
+    .hero-image {
+      order: 1;
+    }
+  }
+  
